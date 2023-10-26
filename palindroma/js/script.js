@@ -1,52 +1,35 @@
 const userMessage = prompt("Scrivi una parola!");
 console.log(userMessage);
 
-userMessage = letter
-
 
 // invocazione della funzione 
-//let userPalindroma = palindroma()
-
-
+ palindroma(userMessage)
 
 // FUNZIONE 
-//function palindroma() {
+function palindroma(userMessage) {
 
-    //let i = 0;
-    let myWord = "";
-    let letter = [];
+    let i = 0;
+    const letter = []; 
+    const letterReverse = [];
     
-    //myWord = userMessage;
-     
-
-    for (let i = 0; i < myWord.length; i++) {
-        
-        letter.push(myWord[i])
-        
-
-        // if () {
-        // console.log("questa parola è palindroma")
+    for (let i = 0; i < userMessage.length; i++) {
+      
+      letter.push(userMessage[i])
+      console.log(userMessage[i])
+    }  
     
-    //     }else {
-      //   console.log("questa parola NON è palindroma")
-        //}
-
-        
+    if (letter === letterReverse) {
+        console.log("questa parola è palindroma")
+  
+      }else {
+        console.log("questa parola NON è palindroma")
+      
     }
-    console.log(letter)
-
-
-
-//}
-
-
-
-
-
-
-//if (userMessage = userPalindroma) {
-  //  console.log("questa parola è palindroma")
+}
     
-//}else {
-  //  console.log("questa parola NON è palindroma")
-//}
+    
+
+
+
+
+
